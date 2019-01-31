@@ -93,7 +93,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/firmware/venus.mbn:system/vendor/firmware/venus.mbn \
     vendor/huawei/kiwi/proprietary/vendor/firmware/venus.mdt:system/vendor/firmware/venus.mdt \
     vendor/huawei/kiwi/proprietary/vendor/framework/com.qti.snapdragon.sdk.display.jar:system/vendor/framework/com.qti.snapdragon.sdk.display.jar \
-    vendor/huawei/kiwi/proprietary/vendor/framework/QPerformance.jar:system/vendor/framework/QPerformance.jar \
     vendor/huawei/kiwi/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
@@ -603,4 +602,5 @@ PRODUCT_PACKAGES += \
     qcnvitems \
     qcrilhook \
     qcrilmsgtunnel \
+    QPerformance \
     TimeService
