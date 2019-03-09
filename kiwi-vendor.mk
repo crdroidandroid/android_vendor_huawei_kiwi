@@ -16,6 +16,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/bin/adsprpcd:system/vendor/bin/adsprpcd \
+    vendor/huawei/kiwi/proprietary/vendor/bin/btnvtool:system/vendor/bin/btnvtool \
     vendor/huawei/kiwi/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init \
     vendor/huawei/kiwi/proprietary/vendor/bin/huawei_version:system/vendor/bin/huawei_version \
     vendor/huawei/kiwi/proprietary/vendor/bin/hw/android.hardware.drm@1.0-service.widevine:system/vendor/bin/hw/android.hardware.drm@1.0-service.widevine \
@@ -96,8 +97,13 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib64/sensors.kiwi.so:system/vendor/lib64/sensors.kiwi.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/lib_fpc_tac_shared.so:system/vendor/lib64/lib_fpc_tac_shared.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/lib_oeminfo_interface.so:system/vendor/lib64/lib_oeminfo_interface.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib64/libbt-hidlclient.so:system/vendor/lib64/libbt-hidlclient.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libbtaddr.so:system/vendor/lib64/libbtaddr.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib64/libbtcheck.so:system/vendor/lib64/libbtcheck.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib64/libbthost_if.so:system/vendor/lib64/libbthost_if.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib64/libbtinfo.so:system/vendor/lib64/libbtinfo.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libbtpower.so:system/vendor/lib64/libbtpower.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libdmd.so:system/vendor/lib64/libdmd.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libqmi_nv_api.so:system/vendor/lib64/libqmi_nv_api.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/librmnetctl.so:system/vendor/lib64/librmnetctl.so \
@@ -211,6 +217,13 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libbt-hidlclient.so:system/vendor/lib/libbt-hidlclient.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libbtaddr.so:system/vendor/lib/libbtaddr.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libbtcheck.so:system/vendor/lib/libbtcheck.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libbthost_if.so:system/vendor/lib/libbthost_if.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libbtinfo.so:system/vendor/lib/libbtinfo.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libbtpower.so:system/vendor/lib/libbtpower.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libcalmodule_akm.so:system/vendor/lib/libcalmodule_akm.so \
@@ -508,7 +521,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libadreno_utils.so:system/vendor/lib64/libadreno_utils.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libc2d30-a3xx.so:system/vendor/lib64/libc2d30-a3xx.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libcalmodule_akm.so:system/vendor/lib64/libcalmodule_akm.so \
@@ -562,7 +574,21 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libthermalclient.so:system/vendor/lib64/libthermalclient.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so
+    vendor/huawei/kiwi/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
+    vendor/huawei/kiwi/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:system/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti \
+    vendor/huawei/kiwi/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:system/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
+    vendor/huawei/kiwi/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:system/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:system/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so
 
 PRODUCT_PACKAGES += \
     colorservice \
